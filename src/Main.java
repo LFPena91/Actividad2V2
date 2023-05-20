@@ -1,15 +1,15 @@
+import Alumnos.Alumno;
 import Asignaturas.Asignatura;
-import Asignaturas.LPOO;
-
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner notaS = new Scanner(System.in);
-        Asignatura LPOO = new LPOO(0);
-        LPOO.nombre();
-        System.out.println("Ingrese la nota:");
-        Asignaturas.LPOO.setNota(notaS.nextDouble());
-        System.out.println("Su nota es: " + Asignaturas.LPOO.getNota());
+        Asignatura LPOO = new Asignatura ("LPOO",0);
+        Asignatura Calculo = new Asignatura("Calculo",0);
+        Asignatura Fisica = new Asignatura("Fisica", 0);
+        Asignatura Comunicaciones = new Asignatura("Comunicaciones", 0);
+
+        Alumno Luis = new Alumno("Luis", 32);
+        Alumno Juan = new Alumno("Juan", 25);
+        Alumno Andrea = new Alumno("Andrea", 28);
     }
 }
